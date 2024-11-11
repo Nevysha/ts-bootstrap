@@ -1,3 +1,4 @@
+import { RootState } from '@/app/store.ts';
 import type { PayloadAction } from '@reduxjs/toolkit';
 import { createSlice } from '@reduxjs/toolkit';
 
@@ -23,3 +24,5 @@ export const exempleSlice = createSlice({
 export const { setSelectedNodeId } = exempleSlice.actions;
 
 export const exempleReducer = exempleSlice.reducer;
+
+export const getExempleSliceState = (state: RootState) => state.exempleReducer;
