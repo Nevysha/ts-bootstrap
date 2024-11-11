@@ -1,5 +1,5 @@
 import { Hello } from '@lib/hello.tsx';
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
